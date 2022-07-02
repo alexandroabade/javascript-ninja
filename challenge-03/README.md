@@ -159,4 +159,45 @@ Quantos metros a pessoa andou? (Use uma instrução para responder e comentário
 inline ao lado da instrução para mostrar a resposta retornada)
 */
 pessoa.caminhouQuantosMetros; // 350
+
+/*
+Agora vamos deixar a brincadeira um pouco mais divertida! :D
+Crie um método para o objeto `pessoa` chamado `apresentacao`. Esse método deve
+retornar a string:
+- "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
+
+Só que, antes de retornar a string, você vai fazer algumas validações:
+- Se o `sexo` de `pessoa` for "Feminino", a frase acima, no início da
+apresentação, onde diz "eu sou o", deve mostrar "a" no lugar do "o";
+- Se a idade for `1`, a frase acima, na parte que fala da idade, vai mostrar a
+palavra "ano" ao invés de "anos", pois é singular;
+- Se a quantidade de metros caminhados for igual a `1`, então a palavra que
+deve conter no retorno da frase acima é "metro" no lugar de "metros".
+- Para cada validação, você irá declarar uma variável localmente (dentro do
+método), que será concatenada com a frase de retorno, mostrando a resposta
+correta, de acordo com os dados inseridos no objeto.
+*/
+pessoa.apresentacao = function() {
+  var sexo = 'o';
+  var idadeAnos = 'anos';
+  var metrosCaminhados = 'metros';
+
+  if(pessoa.sexo === 'Feminino') {
+	sexo = 'a';
+};
+
+  if(pessoa.idade === 1) {
+	idadeAnos = 'ano';
+};  
+
+  if(pessoa.caminhouQuantosMetros === 1) {
+	metrosCaminhados = metro;
+};
+
+  return 'Olá, eu sou' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + tenho + pessoa.idade + pessoa.mostrarIdade + idadeAnos + ', ' + pessoa.altura + ', ' + 'meu peso é ' + pessoa.peso + 'e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metrosCaminhados + '!';
+};
+
+// Agora, apresente-se ;)
+pessoa.apresentacao(); 
+
 ```
