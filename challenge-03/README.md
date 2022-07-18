@@ -95,7 +95,7 @@ Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pesso.nomeCompleto(); // "Olá! Meu nome é Alexandro Abade!"
+pessoa.nomeCompleto(); // "Olá! Meu nome é Alexandro Abade!"
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
